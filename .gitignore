@@ -30,3 +30,19 @@ mvp_predictions_for_bi.csv
 mvp_predictions_for_bi.json
 mvp_predictions_next_season.csv
 mvp_predictions_5_years_comprehensive.csv
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific
+*.sublime-workspace
+*.sublime-project
+.idea/
+*.swp
+*.swo

@@ -16,14 +16,36 @@ The analysis uses two main datasets:
 - `Regular_Season.csv`: Regular season statistics
 - `Playoffs.csv`: Playoff performance data
 
+### Data Processing
+The data goes through several preprocessing steps:
+1. Initial cleaning (handling missing values, removing duplicates)
+2. Feature engineering:
+   - Per game statistics calculation
+   - Advanced metrics (TS%, eFG%, etc.)
+   - Player efficiency ratings
+3. Integration of regular season and playoff data
+4. Normalization of statistics within each season
+
+### Model Features
+Key statistics used in the prediction:
+- Traditional stats (points, rebounds, assists per game)
+- Advanced metrics (true shooting %, effective field goal %)
+- Playoff performance indicators
+- Year-over-year improvements
+- Team success metrics
+
 ## Requirements
 
 ```bash
-pandas
-numpy
-scikit-learn
-plotly
-openpyxl
+pandas>=2.3.2
+numpy>=2.3.2
+scikit-learn>=1.7.1
+matplotlib>=3.7.1
+seaborn>=0.12.2
+plotly>=5.18.0
+xgboost>=1.7.6
+openpyxl>=3.1.2
+jupyter>=1.0.0
 ```
 
 ## Installation
@@ -47,7 +69,7 @@ pip install pandas numpy scikit-learn plotly openpyxl
 
 ## Usage
 
-Open and run the Jupyter notebook `which_nba_team_wins.ipynb` to:
+Open and run the Jupyter notebook `nba_mvp_analysis.ipynb` to:
 - Load and process NBA statistics
 - Train the prediction model
 - Generate MVP predictions
@@ -61,11 +83,6 @@ The project includes several interactive visualizations:
 2. Player Statistics Comparison
 3. Feature Importance Analysis
 
-## Business Intelligence Integration
-
-The notebook exports data in multiple formats for BI tools:
-- CSV format for Tableau
-- JSON format for Power BI
 
 ## License
 
